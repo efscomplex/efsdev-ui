@@ -1,10 +1,11 @@
 {
   "name": "efsdev",
   "version": "1.0.0",
+  "homepage": "https://efscomplex.github.io/efsdev-ui",
   "main": "index.js",
   "author": "@efsdev",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*",
     "examples/*"
@@ -12,6 +13,9 @@
   "scripts": {
     "start": "yarn workspace @efsdev/ui start",
     "build": "yarn workspace @efsdev/ui build",
+    "build:storybook": "yarn workspace @efsdev/ui build-storybook",
+    "predeploy": "yarn build:storybook",
+    "deploy": "gh-pages -d packages/ui/storybook-static",
     "publish:ui": "yarn workspace @efsdev/ui publish:ui"
   }
 }
