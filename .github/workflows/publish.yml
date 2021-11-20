@@ -1,4 +1,4 @@
-name: Action - NPM Ppublish
+name: Publish to Npm
 on:
   push:
     branches:
