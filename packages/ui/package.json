@@ -11,7 +11,7 @@
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "publish:ui": "npm publish --access public"
+    "publish:ui": "echo hello world"
   },
   "dependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
