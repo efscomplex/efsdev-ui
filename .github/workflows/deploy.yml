@@ -1,8 +1,8 @@
-name: Action - Deploy Storybook
+name: Deploy Storybook
 on:
   push:
     branches:
-      -main
+      - main
 jobs:
   Deploy-Storybook:
     runs-on: ubuntu-latest
