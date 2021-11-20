@@ -1,0 +1,16 @@
+{
+  "name": "efsdev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "@efsdev",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "start": "yarn workspace @efsdev/ui start",
+    "build": "yarn workspace @efsdev/ui build"
+  }
+}
