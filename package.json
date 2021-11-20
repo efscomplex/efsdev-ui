@@ -4,13 +4,14 @@
   "main": "index.js",
   "author": "@efsdev",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*",
     "examples/*"
   ],
   "scripts": {
     "start": "yarn workspace @efsdev/ui start",
-    "build": "yarn workspace @efsdev/ui build"
+    "build": "yarn workspace @efsdev/ui build",
+    "publish:ui": "yarn workspace @efsdev/ui publish:ui"
   }
 }
