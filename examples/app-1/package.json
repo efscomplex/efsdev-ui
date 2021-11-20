@@ -1,17 +1,14 @@
 {
-  "name": "@efsdev/ui",
-  "version": "0.0.0",
-  "private": false,
+  "name": "snowpack-react",
+  "version": "1.0.0",
+  "private": "true",
   "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "publish:ui": "npm publish --access public"
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
@@ -19,14 +16,9 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
     "@snowpack/plugin-react-refresh": "^2.5.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@snowpack/web-test-runner-plugin": "^0.2.2",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/react": "^6.3.12",
     "@testing-library/react": "^11.2.6",
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
@@ -35,7 +27,6 @@
     "@types/react-dom": "^17.0.3",
     "@types/snowpack-env": "^2.3.3",
     "@web/test-runner": "^0.13.3",
-    "babel-loader": "^8.2.3",
     "chai": "^4.3.4",
     "prettier": "^2.2.1",
     "snowpack": "^3.3.7",
