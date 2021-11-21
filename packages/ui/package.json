@@ -6,6 +6,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
+    "build:lib": "tsc src/lib --outDir dist",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -27,7 +28,9 @@
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/react": "^6.3.12",
+    "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.6",
+    "@testing-library/react-hooks": "^7.0.2",
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
     "@types/node": "^16.7.1",

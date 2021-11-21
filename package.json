@@ -13,6 +13,7 @@
   "scripts": {
     "start": "yarn workspace @efsdev/ui start",
     "build": "yarn workspace @efsdev/ui build",
+    "build:lib": "yarn workspace @efsdev/ui build:lib",
     "build:storybook": "yarn workspace @efsdev/ui build-storybook",
     "predeploy": "yarn build:storybook",
     "deploy": "gh-pages -d packages/ui/storybook-static",
