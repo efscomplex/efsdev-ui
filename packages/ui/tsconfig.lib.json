@@ -1,0 +1,22 @@
+{
+    "include": ["src/lib"],
+    "compilerOptions": {
+        "lib":["DOM","ES2015"],
+        "module": "es2015",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "baseUrl": "./",
+        "strict": true,
+        "skipLibCheck": true,
+        "emitDeclarationOnly": true,
+        "declarationDir": "build/dist/lib/types",
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@/*": ["./src/lib"]
+        },
+    }
+}
