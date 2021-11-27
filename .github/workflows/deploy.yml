@@ -13,5 +13,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: lts/*
+      - run: echo '🛠 installing dependencies'
       - run: yarn
+      - run: echo '🚀 Storybook deploying to Github Pages'
       - run: yarn deploy

@@ -11,10 +11,14 @@
     "examples/*"
   ],
   "scripts": {
-    "start": "yarn workspace @efsdev/ui start",
+    "start": "yarn start:ui & yarn start:tsc",
+    "dev": "yarn workspace @efsdev/ui dev",
+    "start:ui": "yarn workspace @efsdev/ui start",
+    "start:tsc": "yarn workspace @efsdev/ui start:tsc",
     "build": "yarn workspace @efsdev/ui build",
-    "build:lib": "yarn workspace @efsdev/ui build:lib",
+    "build:types": "yarn workspace @efsdev/ui build:declarations",
     "build:storybook": "yarn workspace @efsdev/ui build-storybook",
+    "build:project": "yarn build && yarn build:types",
     "predeploy": "yarn build:storybook",
     "deploy": "gh-pages -d packages/ui/storybook-static",
     "publish:ui": "yarn workspace @efsdev/ui publish:ui"
