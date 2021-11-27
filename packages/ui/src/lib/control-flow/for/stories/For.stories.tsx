@@ -1,7 +1,7 @@
+import { Container } from '@/layout'
+import { GlobalStyles } from '@/styles/GlobalStyles'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 import React from 'react'
-import { Container } from '../../../layout'
-import { GlobalStyles } from '../../../styles/GlobalStyles'
 import { For } from '../For'
 import { PokemonWrap } from './Wrap'
 

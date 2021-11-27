@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
 type Props = Parameters<typeof React.createElement>[1]
-type El = Parameters<typeof React.createElement>[0]
 
 export type ForProps<T = any> = {
   each: readonly T[] | Promise<T>[] | Promise<T>
-  as?: (props: any) => JSX.Element
   props?: Props
   fallback?: JSX.Element
+  as?: (props: any) => JSX.Element
   render?: (item: T) => JSX.Element
   children?: (item: T) => JSX.Element
 }
