@@ -1,22 +1,18 @@
 import type { ButtonHTMLAttributes } from 'react';
-declare const colorVariants: readonly ["primary", "secondary", "success", "warning", "danger"];
-declare type ColorVariant = typeof colorVariants[number];
-declare type VariantProps = {
-    [key in ColorVariant]?: boolean;
-};
-export declare type BtnSize = 'small' | 'medium' | 'large';
+declare type BtnSize = 'small' | 'medium' | 'large';
+declare type ColorVariant = 'primary' | 'secondary' | 'success' | 'warning' | 'error';
 export declare type BtnProps = {
     size: BtnSize;
+    variant: ColorVariant;
     label?: string;
     ghost?: boolean;
-    thin?: boolean;
-    bold?: boolean;
-} & VariantProps & ButtonHTMLAttributes<HTMLButtonElement>;
-export declare const Btn: import("styled-components").StyledComponent<"button", any, {
+    weight?: 'light' | 'bold' | 'normal';
+} & ButtonHTMLAttributes<HTMLButtonElement>;
+export declare const Btn: import("goober").StyledVNode<Omit<import("react").ClassAttributes<HTMLButtonElement> & ButtonHTMLAttributes<HTMLButtonElement> & import("goober").DefaultTheme & {
     size: BtnSize;
+    variant: ColorVariant;
     label?: string | undefined;
     ghost?: boolean | undefined;
-    thin?: boolean | undefined;
-    bold?: boolean | undefined;
-} & VariantProps & ButtonHTMLAttributes<HTMLButtonElement>, never>;
+    weight?: "light" | "bold" | "normal" | undefined;
+}, never>>;
 export {};

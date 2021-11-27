@@ -8,7 +8,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "dev": "yarn start & yarn start:tsc",
+    "dev": "yarn storybook & yarn start:tsc",
     "start:tsc": "tsc -p tsconfig.lib.json --watch",
     "build:declarations": "tsc -p tsconfig.lib.json",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
@@ -20,9 +20,9 @@
   },
   "dependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
+    "goober": "^2.1.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -42,7 +42,6 @@
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
     "@types/snowpack-env": "^2.3.3",
-    "@types/styled-components": "^5.1.15",
     "@web/test-runner": "^0.13.3",
     "babel-loader": "^8.2.3",
     "chai": "^4.3.4",
