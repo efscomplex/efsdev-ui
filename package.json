@@ -20,7 +20,7 @@
     "build:storybook": "yarn workspace @efsdev/ui build-storybook",
     "build:project": "yarn build && yarn build:types",
     "predeploy": "yarn build:storybook",
-    "deploy": "gh-pages -d packages/ui/storybook-static",
+    "deploy": "git config user.email efscomplex@gmail.com & gh-pages -d packages/ui/storybook-static",
     "publish:ui": "yarn workspace @efsdev/ui publish:ui"
   }
 }
